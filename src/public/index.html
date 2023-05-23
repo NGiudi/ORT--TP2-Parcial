@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parcial TP2</title>
+</head>
+
+<body>
+  <main>
+    <h1>Ingresar una nota</h1>
+
+    <form id="post-notas">
+      <input name="nota" type="number" />
+      <input type="submit" value="Ingresar nota"/>
+    </form>
+  </main>
+</body>
+
+<script>
+  document.querySelector("#post-notas").addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const nota = parseInt(e.target.nota.value);
+
+    if (nota > 10 || nota < 1) {
+      alert("la nota ingresa no es válida");  
+    } else {
+      fetch("/notas/ingresar", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ nota })
+      });
+    }
+  });
+</script>
+
+</html>
