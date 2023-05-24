@@ -27,6 +27,6 @@ Todas las rutas descriptas anteriormente deben estar disponibles en un router co
 
 2. Se ha agregado un html muy simple que permite ingresar notas.
 
-3. Se ha agregado print de la consola de thunder client para ver la respuesta de los endpoints. (Las imagenes está en la carpeta 'assets/imgs')
+3. Se ha agregado print de la consola de thunder client para ver la respuesta de los endpoints. (Las imagenes está en la carpeta assets/imgs)
 
 4. Se ha agregado manejo de errores en el controlar para evitar excepciones en el servidor, con un mensaje de error.
