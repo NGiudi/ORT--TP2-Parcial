@@ -1,5 +1,7 @@
 # Parcial_TP2
 
+Parcial de la materia taller de programación 2 de la carrera de anlista en sistemas en la ORT.
+
 ## Consigna
 Desarrollar un servidor MVC con Node.js y express.
 
